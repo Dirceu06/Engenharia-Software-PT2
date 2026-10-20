@@ -4,7 +4,7 @@ from Erros import (
     LimiteSemanalError,
     ReservaDuplicadaError,
 )
-from Reserva import Reserva
+from reserva import Reserva
 
 
 class ServicoReserva:
