@@ -12,8 +12,6 @@ class Horario:
         self.inicio = inicio
         self.capacidade = capacidade
         self.reservas = []
-        ano, semana, _ = self.inicio.isocalendar()
-        self.semana = (ano, semana)
 
     def vagas_ocupadas(self):
         return sum(1 for r in self.reservas if r.ocupa_vaga())
