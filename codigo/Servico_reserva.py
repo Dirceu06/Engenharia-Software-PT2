@@ -4,8 +4,8 @@ from Erros import (
     LimiteSemanalError,
     ReservaDuplicadaError,
 )
-from reserva import Reserva
 
+from Reserva import Reserva
 
 class ServicoReserva:
     def __init__(self, limite_semanal=2):
@@ -61,5 +61,5 @@ class ServicoReserva:
             1 for r in self.reservas_do_aluno(aluno)
             if r.ocupa_vaga()
             and r.horario.materia.nome == horario.materia.nome
-            and r.horario.semana() == horario.semana()
+            and r.horario.semana == horario.semana
         )
