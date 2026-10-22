@@ -3,7 +3,11 @@ testes do módulo serviço de reserva
 """
 
 import unittest
+import sys
 from datetime import timedelta
+from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 
 from Erros import (
     HorarioInexistenteError,
